@@ -67,6 +67,17 @@ def delete_book(book_id):
     redirect('/')
   abort(404)
 
+@books_app.route('/<book_id:int>/check_out', method="POST")
+def check_out(book_id):
+  username = request.forms.get("username")
+  book = Book.findById(book_id)
+  if (username and book):
+    book.check_out(username)
+    redirect('/books/%i'%book_id)
+  if (book):
+    abort(403)
+  abort(404)
+
 @books_app.route('/<book_id:int>', method=["POST","PUT"])
 def edit_book(book_id):
   book = Book.findById(book_id)

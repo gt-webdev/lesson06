@@ -45,12 +45,15 @@ class Book:
     self.year = year
     self.author = author
     self.description = desc
+    self.checked_out = []
     self.id = Book.genNewId()
 
 
   def save(self):
     return Book.add(self)
 
+  def check_out(self, username="someone"):
+    self.checked_out.append(username)
 
   def delete(self):
     return Book.books.pop(self.id, None)
