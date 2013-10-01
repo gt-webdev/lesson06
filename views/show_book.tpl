@@ -22,7 +22,7 @@
   <br />
   <input type='text' placeholder="Book Author" name="author" />
   <br />
-  <textarea type='text' placeholder="Book Description" name="description">
+  <textarea type='text' placeholder="Book Description" name="desc">
   </textarea>
   <br />
   <input type="submit" value="Edit Book" />
