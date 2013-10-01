@@ -1,8 +1,9 @@
-<div>
+%rebase('layout.tpl', title='Books List - Library of Webdev')
+<div class="header">
   <h1>Library of WebDev</h1>
   <h2>Books List</h2>
 </div>
-<div>
+<div class='books-list'>
   <ul>
   %for book in books:
     <li>
@@ -13,7 +14,7 @@
   %end
   </ul>
 </div>
-<div>
+<div class='actions'>
   <form method='POST' action='/books'>
     <input type='text' placeholder="Book Title" name="title" />
     <br />
@@ -21,8 +22,7 @@
     <br />
     <input type='text' placeholder="Book Author" name="author" />
     <br />
-    <textarea type='text' placeholder="Book Description" name="desc">
-    </textarea>
+    <textarea type='text' placeholder="Book Description" name="desc"></textarea>
     <br />
     <input type="submit" value="Add Book" />
   </form>
@@ -31,6 +31,6 @@
     <input type="submit" value="Clear Library" />
   </form>
 </div>
-<div>
+<div class='footer'>
   <h6>Copyright 2025, gt: webdev, inc.</h6>
 </div>

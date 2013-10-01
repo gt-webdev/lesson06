@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* header styles */
+div.header {
+  background-color: #007fff;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  padding: 4px;
+}
+
+div.header h1 {
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+
+div.header h2 {
+  display: inline;
+  padding: 0 10px;;
+  margin: 0;
+}
+
+/* books-list */
+div.books-list {
+  float:left;
+}
+
+div.books-list ul{
+  list-style: lower-greek;
+}
+
+div.books-list a:visited{
+  color: #007fff;
+}
+
+div.books-list a:active{
+  color: blue;
+}
+
+div.books-list a:hover{
+  color: grey;
+}
+
+/* forms */
+div.actions {
+  float: right;
+}
+
+div.actions input[type="text"], div.actions textarea {
+  border: 5px solid #007fff;
+  border-radius: 10px;
+  padding: 8px;
+  font-size: 15pt;
+}
+
+div.actions form {
+  padding: 5px;
+}
+
+div.actions input[type="submit"] {
+  border: none;
+  border-radius: 8px;
+  width: 250px;
+  height: 35px;
+  background-color: #007fff;
+  color: white;
+  font-weight: bold;
+  font-size: 15pt;
+  cursor: pointer
+}
+
+/* footer */
+div.footer {
+  position: absolute;
+  bottom: 0;
+}
+
+div.footer h6 {
+  margin: 5px;
+}
