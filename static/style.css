@@ -72,6 +72,35 @@ div.actions input[type="submit"] {
   cursor: pointer
 }
 
+div.actions div.link {
+  padding: 7px 6px;
+  border: none;
+  border-radius: 8px;
+  width: 250px;
+  height: 20px;
+  background-color: #007fff;
+  color: white;
+  font-weight: bold;
+  font-size: 15pt;
+  cursor: pointer;
+  text-align: center;
+}
+
+div.actions a{
+  text-decoration: none;
+}
+
+div.actions a:visited{
+  color: white;
+}
+
+div.actions a:active{
+  color: white;
+}
+
+div.actions a:hover{
+  color: black;
+}
 /* footer */
 div.footer {
   position: absolute;
@@ -80,4 +109,19 @@ div.footer {
 
 div.footer h6 {
   margin: 5px;
+}
+
+/* book-details */
+div.books-details {
+  float: left;
+  padding: 10px;
+}
+
+div.books-details h1, div.books-details h2 {
+  color: #007fff;
+}
+
+div.books-details p {
+  font-weight: light;
+  font-size: 14pt;
 }
